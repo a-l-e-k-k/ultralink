@@ -97,7 +97,7 @@ const LandingPage = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <h2 className="text-5xl font-extrabold sm:text-6xl md:text-7xl lg:text-8xl mb-6">
-                <span className="block text-white">Synergizing</span>
+                <span className="block text-white">Linking</span>
                 <span className="block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600">AI & Infrastructure</span>
               </h2>
               <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
