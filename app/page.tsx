@@ -220,7 +220,7 @@ const About = () => (
         transition={{ duration: 0.6, delay: 0.2 }}
         viewport={{ once: true }}
       >
-        We're not merely connecting systems; we're architecting the future of tomorrow's enterprises.
+        We&apos;re not merely connecting systems; we&apos;re architecting the future of tomorrow&apos;s enterprises.
         ULTRALINK stands at the vanguard of the AI revolution, ensuring businesses of all scales can harness
         the full spectrum of artificial intelligence, seamlessly integrated into their core processes.
       </motion.p>
@@ -263,7 +263,7 @@ const Contact = () => (
 const Footer = () => (
   <footer className="bg-black border-t border-gray-800">
     <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center text-gray-400">
-      <p>&copy; 2024 ULTRALINK. Forging the synapses of tomorrow's digital ecosystem.</p>
+      <p>&copy; 2024 ULTRALINK. Forging the synapses of tomorrow&apos;s digital ecosystem.</p>
     </div>
   </footer>
 );
