@@ -167,7 +167,7 @@ const LandingPage = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              We&apos;re not merely connecting systems; we&apos;re architecting the neural network of tomorrow&apos;s enterprises.
+              We&apos;re not merely connecting systems; we&apos;re architecting the future of tomorrow&apos;s enterprises.
               ULTRALINK stands at the vanguard of the AI revolution, ensuring businesses of all scales can harness
               the full spectrum of artificial intelligence, seamlessly integrated into their core processes.
             </motion.p>
