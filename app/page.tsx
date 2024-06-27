@@ -47,7 +47,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen, activeSection, opacity }: { isMenuO
   <motion.header style={{ opacity }} className="fixed w-full z-50 bg-black/80 backdrop-blur-md">
     <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
       <motion.h1
-        className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600"
+        className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 fallback-text-color"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -124,7 +124,7 @@ const Hero = () => {
         >
           <h2 className="text-5xl font-extrabold sm:text-6xl md:text-7xl lg:text-8xl mb-6">
             <span className="block text-white">Linking</span>
-            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600">AI & Infrastructure</span>
+            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 fallback-text-color">AI & Infrastructure</span>
           </h2>
           <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
             ULTRALINK seamlessly connects cutting-edge AI tools with your existing infrastructure,
