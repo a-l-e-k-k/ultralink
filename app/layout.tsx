@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "ULTRALINK",
-  description: "ULTRALINK is a Bridge between Cutting Edge AI and Existing Systems",
+  description: "ULTRALINK is a Link between Cutting Edge AI and Existing Systems",
 };
 
 export default function RootLayout({
