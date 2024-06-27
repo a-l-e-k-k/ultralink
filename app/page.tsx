@@ -15,7 +15,9 @@ const LandingPage = () => {
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 100], [0, 1]).get();
 
+
   useEffect(() => {
+ 
     const handleScroll = () => {
       const sections = ['home', 'features', 'about', 'contact'];
       const current = sections.find(section => {
