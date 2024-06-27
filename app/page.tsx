@@ -157,7 +157,7 @@ const Features = () => (
   <section id="features" className="py-20 bg-gradient-to-b from-black to-gray-900">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.h2
-        className="text-4xl font-extrabold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500"
+        className="text-4xl font-extrabold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500 fallback-text-color"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -205,7 +205,7 @@ const About = () => (
   <section id="about" className="py-20 bg-gradient-to-b from-gray-900 to-indigo-900">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <motion.h2
-        className="text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 to-purple-400"
+        className="text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-indigo-300 to-purple-400 fallback-text-color"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -232,7 +232,7 @@ const Contact = () => (
   <section id="contact" className="py-20 bg-gradient-to-b from-indigo-900 to-black">
     <div className="max-w-7xl mx-auto px-4 pt-8 sm:px-6 lg:px-8">
       <motion.h2
-        className="text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500"
+        className="text-4xl font-extrabold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500 fallback-text-color"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
