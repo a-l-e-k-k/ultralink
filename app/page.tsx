@@ -104,6 +104,13 @@ const MobileMenu = ({ isOpen, setIsOpen }: { isOpen: boolean, setIsOpen: React.D
   </AnimatePresence>
 );
 
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 const Hero = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -135,7 +142,7 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-indigo-500/50">
+            <Button onClick={scrollToContact} className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-indigo-500/50">
               Revolutionize Your Systems
               <ArrowRight className="ml-2 -mr-1 h-5 w-5" />
             </Button>
