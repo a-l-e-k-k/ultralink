@@ -14,7 +14,7 @@ const LandingPage = () => {
   const [activeSection, setActiveSection] = useState('home');
   const { scrollY } = useScroll();
   const opacity = useTransform(scrollY, [0, 100], [0, 1]).get();
-
+  // oof, this is a lot of code for a landing page
 
   useEffect(() => {
  
