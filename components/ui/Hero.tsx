@@ -30,20 +30,25 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     <h2 className="text-5xl font-extrabold sm:text-6xl md:text-7xl lg:text-8xl mb-6">
-                        <span className="block text-white">Linking</span>
-                        <span className="block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 fallback-text-color">AI & Infrastructure</span>
+                        <span className="block text-white">Seamlessly Integrate</span>
+                        <span className="block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 fallback-text-color">AI & Your Infrastructure</span>
                     </h2>
                     <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
-                        ULTRALINK seamlessly connects cutting-edge AI tools with your existing infrastructure,
-                        unlocking new possibilities and propelling your operations into the future.
+                        ULTRALINK empowers businesses to harness AI before powerful competitors leave you behind.
+                        Bridge the technology gap and supercharge your existing operations for unparalleled growth and efficiency.
                     </p>
+                    <ul className="mt-8 space-y-2 text-lg text-gray-300">
+                        <li>✓ Accelerate business growth with tailored AI solutions</li>
+                        <li>✓ Gain a competitive edge in your rapidly evolving industry</li>
+                        <li>✓ Save time, money, and resources</li>
+                    </ul>
                     <motion.div
                         className="mt-10"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
                         <Button onClick={scrollToContact} className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-indigo-500/50">
-                            Revolutionize Your Systems
+                            Start Your AI Journey Now
                             <ArrowRight className="ml-2 -mr-1 h-5 w-5" />
                         </Button>
                     </motion.div>
@@ -60,5 +65,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
-
+export default Hero

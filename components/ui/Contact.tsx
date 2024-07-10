@@ -62,7 +62,7 @@ export default function Contact() {
                                 </p>
                             ))}
                     </div>
-                    <textarea required name="message" placeholder="Tell us about your AI integration needs" rows={4} className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:ring-2 focus:ring-indigo-400 focus:border-transparent"></textarea>
+                    <textarea required name="message" placeholder="Tell us about how best to contact you, what operations take up substantial time, speculations on AI integration, etc" rows={4} className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:ring-2 focus:ring-indigo-400 focus:border-transparent"></textarea>
                     <div id="customer-error" aria-live="polite" aria-atomic="true">
                         {state.errors?.message &&
                             state.errors.message.map((error: string) => (
