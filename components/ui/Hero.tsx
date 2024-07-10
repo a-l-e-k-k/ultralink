@@ -22,7 +22,7 @@ const Hero = () => {
     return (
         <section ref={ref} id="home" className="relative min-h-screen flex items-center overflow-hidden">
             <ParticleNetwork />
-            <motion.div style={{ y }} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <motion.div style={{ y }} className="max-w-7xl mx-auto px-4 pt-2 sm:px-6 lg:px-8 relative z-10">
                 <motion.div
                     className="text-center"
                     initial={{ opacity: 0, y: 20 }}
@@ -30,7 +30,7 @@ const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     <h2 className="text-4xl font-extrabold sm:text-5xl md:text-6xl lg:text-7xl mb-6">
-                        <span className="block text-white">Seamlessly Integrate</span>
+                        <span className="block text-white">ULTRALINK</span>
                         <span className="block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 fallback-text-color">AI & Your Infrastructure</span>
                     </h2>
                     <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
