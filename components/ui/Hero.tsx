@@ -40,7 +40,7 @@ const Hero = () => {
                     </p>
                     <ul className="mt-8 space-y-2 text-lg text-gray-300">
                         <li>✓ Accelerate business growth with tailored AI solutions</li>
-                        <li>✓ Gain a competitive edge in your rapidly evolving industry</li>
+                        <li className='hidden md:block'>✓ Gain a competitive edge in your rapidly evolving industry</li>
                         <li>✓ Save time, money, and resources</li>
                     </ul>
                     <motion.div
