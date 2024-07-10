@@ -29,13 +29,14 @@ const Hero = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
-                    <h2 className="text-5xl font-extrabold sm:text-6xl md:text-7xl lg:text-8xl mb-6">
+                    <h2 className="text-4xl font-extrabold sm:text-5xl md:text-6xl lg:text-7xl mb-6">
                         <span className="block text-white">Seamlessly Integrate</span>
                         <span className="block bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 fallback-text-color">AI & Your Infrastructure</span>
                     </h2>
                     <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
-                        ULTRALINK empowers businesses to harness AI before powerful competitors leave you behind.
-                        Bridge the technology gap and supercharge your existing operations for unparalleled growth and efficiency.
+                        ULTRALINK empowers businesses to harness AI to supercharge their existing operations for unparalleled growth and efficiency.
+                        <span className='font-semibold'> Integrate AI before powerful competitors leave you behind.</span>
+                        
                     </p>
                     <ul className="mt-8 space-y-2 text-lg text-gray-300">
                         <li>✓ Accelerate business growth with tailored AI solutions</li>
