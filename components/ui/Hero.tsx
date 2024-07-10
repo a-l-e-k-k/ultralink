@@ -35,7 +35,7 @@ const Hero = () => {
                     </h2>
                     <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
                         ULTRALINK empowers businesses to harness AI to supercharge their existing operations for unparalleled growth and efficiency.
-                        <span className='font-semibold'> Integrate AI before powerful competitors leave you behind.</span>
+                        <span className='font-semibold hidden md:block'> Integrate AI before powerful competitors leave you behind.</span>
                         
                     </p>
                     <ul className="mt-8 space-y-2 text-lg text-gray-300">
