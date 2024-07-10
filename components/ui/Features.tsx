@@ -22,7 +22,7 @@ const Features = () => (
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
             >
-                At ULTRALINK, we specialize in creating bespoke AI solutions that address your unique challenges. Our approach ensures that businesses of all sizes can leverage AI to compete effectively in today's technology-driven market.
+                At ULTRALINK, we specialize in creating bespoke AI solutions that address your unique challenges. Our approach ensures that businesses of all sizes can leverage AI to compete effectively in today&apos;s technology-driven market.
             </motion.p>
 
             <div className="grid gap-12 grid-cols-1 md:grid-cols-2 mb-16">
