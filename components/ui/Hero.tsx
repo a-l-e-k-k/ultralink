@@ -22,7 +22,7 @@ const Hero = () => {
     return (
         <section ref={ref} id="home" className="relative min-h-screen flex items-center overflow-hidden">
             <ParticleNetwork />
-            <motion.div style={{ y }} className="max-w-7xl mx-auto px-4 -mt-32 md:-mt-0 sm:px-6 lg:px-8 relative z-10 ">
+            <motion.div style={{ y }} className="max-w-7xl mx-auto px-4 md:-mt-0 sm:px-6 lg:px-8 relative z-10 ">
                 <motion.div
                     className="text-center"
                     initial={{ opacity: 0, y: 20 }}
@@ -39,9 +39,9 @@ const Hero = () => {
                         
                     </p>
                     <ul className="mt-8 space-y-2 text-lg text-gray-300">
-                        <li>✓ Accelerate business growth with tailored AI solutions</li>
+                        <li className='hidden md:block'>✓ Accelerate business growth with tailored AI solutions</li>
                         <li className='hidden md:block'>✓ Gain a competitive edge in your rapidly evolving industry</li>
-                        <li>✓ Save time, money, and resources</li>
+                        <li className='hidden md:block'>✓ Save time, money, and resources</li>
                     </ul>
                     <motion.div
                         className="mt-10"
@@ -49,14 +49,14 @@ const Hero = () => {
                         whileTap={{ scale: 0.95 }}
                     >
                         <Button onClick={scrollToContact} className="inline-flex items-center px-8 py-4 text-lg font-medium rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-indigo-500/50">
-                            Start Your AI Journey Now
+                            Contact Us
                             <ArrowRight className="ml-2 -mr-1 h-5 w-5" />
                         </Button>
                     </motion.div>
                 </motion.div>
             </motion.div>
             <motion.div
-                className="absolute bottom-16 md:bottom-10 left-1/2 transform -translate-x-1/2"
+                className="absolute bottom-20 md:bottom-10 left-1/2 transform -translate-x-1/2"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
             >
