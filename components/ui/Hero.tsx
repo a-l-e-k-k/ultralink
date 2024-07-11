@@ -56,7 +56,7 @@ const Hero = () => {
                 </motion.div>
             </motion.div>
             <motion.div
-                className="absolute bottom-20 md:bottom-10 left-1/2 transform -translate-x-1/2"
+                className="absolute bottom-20 md:bottom-10 left-8/18 transform -translate-x-1/2"
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
             >
