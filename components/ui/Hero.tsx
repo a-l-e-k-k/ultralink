@@ -22,7 +22,7 @@ const Hero = () => {
     return (
         <section ref={ref} id="home" className="relative min-h-screen flex items-center overflow-hidden">
             <ParticleNetwork />
-            <motion.div style={{ y }} className="max-w-7xl mx-auto px-4 pt-2 sm:px-6 lg:px-8 relative z-10">
+            <motion.div style={{ y }} className="max-w-7xl mx-auto px-4 -mt-32 md:-mt-0 sm:px-6 lg:px-8 relative z-10 ">
                 <motion.div
                     className="text-center"
                     initial={{ opacity: 0, y: 20 }}
