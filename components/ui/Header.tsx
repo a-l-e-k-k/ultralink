@@ -13,11 +13,11 @@ const Header = ({ isMenuOpen, setIsMenuOpen, activeSection, opacity }: { isMenuO
 
     return (
         <motion.header style={{ opacity }} className="fixed w-full z-50 bg-white backdrop-blur-md">
-            <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div className="max-w-7xl mx-auto py-2 px-2 sm:px-4 lg:px-6 flex justify-between items-center">
                 <div className="flex items-center cursor-pointer" onClick={scrollToTop}>
-                    <img src={'favicon.ico'} alt="Company Logo" className="h-8 mr-3" />
+                    <img src={'favicon.ico'} alt="Company Logo" className="h-12 mr-1 pb-1" />
                     <motion.h1
-                        className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 fallback-text-color cursor-pointer"
+                        className="text-3xl font-bold mt-4 mb-0 mx-2 bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 fallback-text-color cursor-pointer"
                         initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
@@ -27,12 +27,12 @@ const Header = ({ isMenuOpen, setIsMenuOpen, activeSection, opacity }: { isMenuO
                     </motion.h1>
                 </div>
                 <nav className="hidden md:block">
-                    <ul className="flex space-x-8">
+                    <ul className="flex space-x-8 mt-4 mb-0">
                         {['home', 'features', 'about', 'contact'].map((item) => (
                             <motion.li key={item} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}>
                                 <a
                                     href={`#${item}`}
-                                    className={`text-lg transition-colors ${activeSection === item ? 'text-indigo-400' : 'text-gray-900 hover:text-indigo-400'}`}
+                                    className={`text-xl mx-2 transition-colors ${activeSection === item ? 'text-indigo-400' : 'text-gray-900 hover:text-indigo-400'}`}
                                 >
                                     {item.charAt(0).toUpperCase() + item.slice(1)}
                                 </a>
