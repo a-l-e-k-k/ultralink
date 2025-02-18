@@ -12,7 +12,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen, activeSection, opacity }: { isMenuO
     };
 
     return (
-        <motion.header style={{ opacity }} className="fixed w-full z-50 bg-gray-200 backdrop-blur-md">
+        <motion.header style={{ opacity }} className="fixed w-full z-50 bg-white backdrop-blur-md">
             <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
                 <div className="flex items-center cursor-pointer" onClick={scrollToTop}>
                     <img src={'favicon.ico'} alt="Company Logo" className="h-8 mr-3" />
