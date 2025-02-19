@@ -60,6 +60,7 @@ const Hero = () => {
                 animate={{ y: [0, 10, 0] }}
                 transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
             >
+                <p> FAQ </p>
                 <ChevronDown className="h-8 w-8 text-indigo-400" />
             </motion.div>
         </section>

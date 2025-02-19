@@ -58,16 +58,6 @@ const Features = () => {
                     Frequently Asked Questions
                 </motion.h2>
 
-                <motion.p
-                    className="text-xl text-center text-gray-300 mb-12"
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, delay: 0.2 }}
-                    viewport={{ once: true }}
-                >
-                    Learn how AI helps government groups or businesses save time, cut costs,
-                    and stay reliable. Here are some questions we often hear at ULTRALINK.
-                </motion.p>
 
                 {/* FAQ Items */}
                 <div className="space-y-4 max-w-3xl mx-auto">
@@ -80,7 +70,7 @@ const Features = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
                                 viewport={{ once: true }}
-                                className="bg-gray-800 rounded-lg p-4"
+                                className="bg-gray-800 rounded-lg p-4 mt-20"
                             >
                                 <button
                                     onClick={() => handleToggle(index)}
