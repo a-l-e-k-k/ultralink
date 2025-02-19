@@ -35,7 +35,7 @@ const Hero = () => {
                     </h2>
                     <p className="mt-6 text-xl text-gray-300 max-w-3xl mx-auto">
                         Learn from a team that understands how to take advantage of the latest
-                        <span className='font-semibold'>cutting-edge AI technology.</span>
+                        <span className='font-semibold'> cutting-edge AI technology.</span>
                         
                     </p>
                     {/* <ul className="mt-8 space-y-2 text-lg text-gray-300">
