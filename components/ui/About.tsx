@@ -19,7 +19,7 @@ const About = () => (
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
             >
-                At Ultralink AI, we're not your typical tech consulting firm — we're a small, driven team of college students and young professionals passionate about bringing real AI solutions to real-world problems. Our mission is simple: help businesses and local governments integrate AI tools that actually work—saving time, reducing costs, and improving efficiency.
+                At Ultralink AI, we&apos;re not your typical tech consulting firm — we&apos;re a small, driven team of college students and young professionals passionate about bringing real AI solutions to real-world problems. Our mission is simple: help businesses and local governments integrate AI tools that actually work—saving time, reducing costs, and improving efficiency.
             </motion.p>
         </div>
     </section>

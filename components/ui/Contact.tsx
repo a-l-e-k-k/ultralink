@@ -33,7 +33,7 @@ export default function Contact() {
                     transition={{ duration: 0.6 }}
                     viewport={{ once: true }}
                 >
-                    Join the AI Revolution
+                    Book a Call
                 </motion.h2>
                 <motion.form
                     key={formKey}
@@ -57,6 +57,15 @@ export default function Contact() {
                     <div id="customer-error" aria-live="polite" aria-atomic="true">
                         {state.errors?.email &&
                             state.errors.email.map((error: string) => (
+                                <p className="mt-2 text-sm text-red-500" key={error}>
+                                    {error}
+                                </p>
+                            ))}
+                    </div>
+                    <input required name="phone" type="phone" placeholder="Phone" className="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-md focus:ring-2 focus:ring-indigo-400 focus:border-transparent" />
+                    <div id="customer-error" aria-live="polite" aria-atomic="true">
+                        {state.errors?.phone &&
+                            state.errors.phone.map((error: string) => (
                                 <p className="mt-2 text-sm text-red-500" key={error}>
                                     {error}
                                 </p>

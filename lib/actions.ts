@@ -9,6 +9,7 @@ export type State = {
         name?: string[];
         email?: string[];
         message?: string[];
+        phone?: string[];
     };
     message?: string | null;
 };
@@ -19,6 +20,7 @@ const FormSchema = z.object({
         invalid_type_error: 'Please enter a valid name.',
     }).min(1, "Please enter a valid name."),
     email: z.string().email({message: "Please enter a valid email."}),
+    phone: z.string().regex(/^\d{10}$/, "Invalid U.S. phone number (must be 10 digits)"),
     message: z.string({
         invalid_type_error: 'Please enter a valid message.',
     }).min(15, "Message must be at least 15 characters long."),
@@ -33,6 +35,7 @@ export async function createContact(prevState: State, formData: FormData) {
     const validatedFields = CreateContact.safeParse({
         name: formData.get('name'),
         email: formData.get('email'),
+        phone: formData.get('phone'),
         message: formData.get('message'),
     });
 
@@ -46,15 +49,15 @@ export async function createContact(prevState: State, formData: FormData) {
     }
 
     // Prepare data for insertion into the database
-    const { name, email, message } = validatedFields.data;
+    const { name, email, phone, message } = validatedFields.data;
 
     // const date = new Date().toISOString().split('T')[0];
 
     // Insert data into the database
     try {
         await sql`
-      INSERT INTO contacts (name, email, message)
-      VALUES (${name}, ${email}, ${message})
+      INSERT INTO contacts (name, email, phone, message)
+      VALUES (${name}, ${email}, ${phone}, ${message})
     `;
     } catch (error) {
         // If a database error occurs, return a more specific error.
