@@ -10,7 +10,7 @@ const About = () => (
                 transition={{ duration: 0.6 }}
                 viewport={{ once: true }}
             >
-                The ULTRALINK Paradigm
+                About the Firm
             </motion.h2>
             <motion.p
                 className="text-xl text-center max-w-3xl mx-auto text-gray-300"
@@ -19,9 +19,7 @@ const About = () => (
                 transition={{ duration: 0.6, delay: 0.2 }}
                 viewport={{ once: true }}
             >
-                We&apos;re not merely connecting systems; we&apos;re architecting the future of tomorrow&apos;s enterprises.
-                ULTRALINK stands at the vanguard of the AI revolution, ensuring businesses of all scales can harness
-                the full spectrum of artificial intelligence, seamlessly integrated into their core processes.
+                At Ultralink AI, we're not your typical tech consulting firm — we're a small, driven team of college students and young professionals passionate about bringing real AI solutions to real-world problems. Our mission is simple: help businesses and local governments integrate AI tools that actually work—saving time, reducing costs, and improving efficiency.
             </motion.p>
         </div>
     </section>
